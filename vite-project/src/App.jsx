@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import TodoTable from './TodoTable';
+import AgeCheck from './components/AgeCheck';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <input placeholder="Date" name="date" value={todo.date} onChange={inputChanged}/>
       <button onClick={addTodo}>Add</button>
       <TodoTable todos={todos} deleteTodo={deleteTodo} />
+      <AgeCheck />
     </>
   );
 }
