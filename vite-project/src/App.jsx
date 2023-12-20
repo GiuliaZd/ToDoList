@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import TodoTable from './TodoTable';
+import TodoTable from './components/TodoTable';
 import AgeCheck from './components/AgeCheck';
+import Calculator from './components/Calculator';
+import UserRegistration from './components/UserRegistration';
 import './App.css';
 
 function App() {
@@ -22,11 +24,14 @@ function App() {
 
   return (
     <>
+    <p>Todo list</p>
       <input placeholder="Description" name="description" value={todo.description} onChange={inputChanged} />
       <input placeholder="Date" name="date" value={todo.date} onChange={inputChanged}/>
       <button onClick={addTodo}>Add</button>
       <TodoTable todos={todos} deleteTodo={deleteTodo} />
       <AgeCheck />
+      <Calculator />
+      <UserRegistration />
     </>
   );
 }
