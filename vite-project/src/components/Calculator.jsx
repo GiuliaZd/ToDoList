@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 function Calculator() {
-    const [num1, setNum1] = useState ('');
+  /*const [num1, setNum1] = useState ('');
     const [num2, setNum2] =useState ('');
     const [result, setResult]=useState(null);
 
@@ -17,8 +17,8 @@ function Calculator() {
           setResult(`${Number(num1)-Number(num2)}`);
           break;
       }
-  }
-  /* const [numA, setNumA ] = useState(0);
+  } */
+  const [numA, setNumA ] = useState(0);
   const [numB, setNumB ] = useState(0);
   const [result, setResult] = useState(0);
 
@@ -47,8 +47,8 @@ function Calculator() {
       <button onClick={calcSub}>-</button>
     </>
   );
-} */
-  return (
+} 
+ /* return (
     <>
     <p>Calculator</p>
     <p>Result = {result}</p>
@@ -58,6 +58,6 @@ function Calculator() {
     <button onClick={() => calculate('subtract')}>-</button> 
      </>
  );
-}
+} */
 
 export default Calculator;
