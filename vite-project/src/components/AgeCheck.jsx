@@ -15,7 +15,7 @@ function AgeCheck() {
   return (
     <>
     <p>Age check</p>
-     <p>Name: {ageCheck.name} Age: {ageCheck.age}</p>
+    <p>Name: {ageCheck.name} Age: {ageCheck.age}</p>
     <input placeholder="Name" name="name" value={ageCheck.name} onChange={inputChanged} />
     <input placeholder="Age" name="age" value={ageCheck.age} onChange={inputChanged} />
     <button onClick={showAlert}>Check Age</button>
