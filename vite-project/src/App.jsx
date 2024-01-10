@@ -3,6 +3,7 @@ import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-material.css';
 import './App.css';
+import ReactiveButton from 'reactive-button';
 
 import TodoTable from './components/TodoTable';
 import AgeCheck from './components/AgeCheck';
@@ -40,7 +41,8 @@ function App() {
       <input placeholder="Description" name="description" value={todo.description} onChange={inputChanged} />
       <input placeholder="Date" name="date" value={todo.date} onChange={inputChanged}/>
       <input placeholder="Status" name="status" value={todo.status} onChange={inputChanged}/>
-      <button onClick={addTodo}>Add</button>
+      
+      <ReactiveButton idleText="Add" color="primary" rounded="true" style={{marginLeft:10}} onClick={addTodo} />
       <div className="ag-theme-material" style={{height: 400, width: 600}}>
          <AgGridReact
             animateRows={true}
