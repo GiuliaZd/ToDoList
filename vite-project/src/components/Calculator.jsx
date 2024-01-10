@@ -40,6 +40,7 @@ function Calculator() {
 
   return (
     <>
+      <h2>Calculator</h2>
       <p>Result = {result}</p>
       <input value={numA} onChange={inputChangedA} />
       <input value={numB} onChange={inputChangedB} />

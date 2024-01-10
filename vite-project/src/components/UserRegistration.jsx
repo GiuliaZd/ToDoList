@@ -16,7 +16,7 @@ function UserRegistration() {
 
   return (
     <>
-    <p>User registration</p>
+    <h2>User registration form</h2>
       <input placeholder="First name" name="firstName" value={user.firstName} onChange={inputChanged}/><br />
       <input placeholder="Last name"name="lastName" value={user.lastName} onChange={inputChanged}/><br />
       <input placeholder="Email" name="email" value={user.email} onChange={inputChanged}/><br />
