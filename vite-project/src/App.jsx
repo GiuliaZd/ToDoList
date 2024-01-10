@@ -16,9 +16,9 @@ function App() {
 
     // Column definitions for ag-grid
  const columnDefs = [
-  { field: 'description', sortable: true, filter: true },
-  { field: 'date', sortable: true, filter: true },
-  { field: 'status', sortable: true, filter: true }
+  { field: 'description', sortable: true, filter: true, suppressMovable: true},
+  { field: 'date', sortable: true, filter: true, suppressMovable: true},
+  { field: 'status', sortable: true, filter: true, suppressMovable: true}
  ]
 
   const inputChanged = (event) => {
@@ -43,6 +43,7 @@ function App() {
       <button onClick={addTodo}>Add</button>
       <div className="ag-theme-material" style={{height: 400, width: 600}}>
          <AgGridReact
+            animateRows={true}
             rowData={todos}
             columnDefs={columnDefs}
          />
