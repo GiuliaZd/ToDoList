@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 function AgeCheck() {
     const [ageCheck, setAgeCheck] = useState({name: '', age: 0});
@@ -18,7 +21,7 @@ function AgeCheck() {
     <p>Name: {ageCheck.name} Age: {ageCheck.age}</p>
     <input placeholder="Name" name="name" value={ageCheck.name} onChange={inputChanged} />
     <input placeholder="Age" name="age" value={ageCheck.age} onChange={inputChanged} />
-    <button onClick={showAlert}>Check Age</button>
+    <Button onClick={showAlert} >Check Age</Button>
      </>
  );
 }
